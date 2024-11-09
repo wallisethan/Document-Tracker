@@ -1,0 +1,98 @@
+.message
+{
+    font-weight: 600;
+    color: blue;
+}
+
+.navbar {
+    background-color: green;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+
+th, td {
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 40px; 
+    width: 400px; 
+    height: 400px;
+    margin: auto; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.login-box h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.forgot-pass a {
+    color: grey;
+    text-align: left;
+    font-size: smaller; 
+}
+
+
+.rf-box {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 40px; 
+    width: 400px; 
+    height: 350px;
+    margin: auto; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
