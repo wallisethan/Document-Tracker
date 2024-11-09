@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block main %}
+
+    <div>
+        <button onclick="window.location.href='/add';" >Add Application!</button>
+    </div>
+    <h1 style="padding-top: 15px; padding-bottom: 10px;">Job Applications</h1>
+    <table align="center" style="width: 1000px; table-layout: fixed;">
+        <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Salary</th>
+            <th>Application Status</th>
+            <th>Date Applied</th>
+        </tr>
+        {% for application in applications %}
+            <tr>
+                <td>{{ application.job_title }}</td>
+                <td>{{ application.company }}</td>
+                <td>${{ application.salary }}</td>
+                <td>{{ application.app_status }}</td>
+                <td>{{ application.date }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

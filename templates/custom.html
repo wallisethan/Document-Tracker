@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Customize Account
+{% endblock %}
+
+{% block main %}
+    <form action="/custom" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="full_name" placeholder="Full Name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="current_job" placeholder="Company Name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="current_salary" placeholder="Salary" type="number">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="dob" placeholder="Date Applied" type="date">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="current_location" placeholder="Location" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="notes" placeholder="Notes - Optional" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Finalize</button>
+    </form>
+{% endblock %}

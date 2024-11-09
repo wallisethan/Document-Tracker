@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+
+    <div>
+        <button onclick="window.location.href='/custom';" >Customize Account</button>
+    </div>
+        {% for info in info %}
+                <h>Name</h>
+                <p>{{ info.full_name }}</p>
+                <h>Current Employer</h>
+                <p>{{ info.current_job }}</p>
+                <h>Current Salary</h>
+                <p>{{ info.current_salary }}</p>
+                <h>Current Location</h>
+                <p>{{ info.current_location }}</p>
+                <h>Date of Birth</h>
+                <p>{{ info.dob}}</p>
+        {% endfor %}
+{% endblock %}
